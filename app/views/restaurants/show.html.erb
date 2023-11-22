@@ -3,4 +3,7 @@
 <p><%= @restaurant.address%></p>
 <p><%= @restaurant.phone_number%></p>
 <p><%= @restaurant.category%></p>
+<div>
+<%= link_to "the reviews for this restaurant", restaurant_reviews_path(@restaurant)%>
+</div>
 <%= link_to "All Restaurants", restaurants_path%>

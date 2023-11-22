@@ -1,0 +1,8 @@
+<h1>All Reviews</h1>
+<ul>
+<%@reviews.each do |review|%>
+<p>The rating is <%= "⭐" * (review.rating)%></p>
+<p><%= review.content%></p>
+<%end%>
+</ul>
+<%= link_to "back to restaurant", restaurant_path(@restaurant)%>
